@@ -1,0 +1,77 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: gray;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: 3;
+    
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    gap: 1.4rem;
+}
+nav a:hover{
+    color: wheat;
+    border-bottom-color: red;
+}
+nav li{
+    gap: 1.5rem;
+margin: 5px;
+padding: 9px;
+}
+
+nav .logo{
+    font-size: 40px;
+    color: wheat;
+}
+span{
+    color: white;
+}
+nav .menu span{
+    cursor: pointer;
+    display: none;
+
+}
+@media screen and (max-width:920px){
+
+    nav .menu span{
+        display:block;
+
+    }
+
+    nav ul{
+        position: fixed;
+        top: 88px;
+        left:-140%;
+        background: black;
+        height: 90vh;
+
+        width: 100%;
+        text-align: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+    nav ul.open {
+        left: -36px;
+        top: 111px;
+
+    }
+    nav ul li{
+        width: 100%;
+      
+        text-align: center;
+
+    }
+
+
+}
